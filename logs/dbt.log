@@ -1,0 +1,241 @@
+[0m18:09:36.227808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229248DBF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229248E3F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229248E1890>]}
+
+
+============================== 18:09:36.240352 | c6cc0ad3-0408-4a50-aa8a-29060d068af7 ==============================
+[0m18:09:36.240352 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:09:36.243368 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m18:09:36.243368 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:09:36.258225 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:09:36.260252 [debug] [MainThread]: Command `dbt init` failed at 18:09:36.260252 after 0.19 seconds
+[0m18:09:36.265791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022923753B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002291D979990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022924722190>]}
+[0m18:09:36.265791 [debug] [MainThread]: Flushing usage events
+[0m18:10:45.650790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002245A37BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002245A356210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002245A357C10>]}
+
+
+============================== 18:10:45.650790 | 50cb79bb-1174-478d-830f-57f6d59722b1 ==============================
+[0m18:10:45.650790 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:10:45.650790 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:10:45.666414 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:10:45.666414 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:10:45.666414 [debug] [MainThread]: Command `dbt init` failed at 18:10:45.666414 after 0.12 seconds
+[0m18:10:45.666414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002245A398550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022453309990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002245A356210>]}
+[0m18:10:45.666414 [debug] [MainThread]: Flushing usage events
+[0m18:12:05.070139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180E6998D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180E696B150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180E5315890>]}
+
+
+============================== 18:12:05.085792 | 570533ab-abe7-4352-a99c-3a1f75e98b32 ==============================
+[0m18:12:05.085792 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:12:05.087817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:12:05.087817 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:12:05.087817 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:12:05.087817 [debug] [MainThread]: Command `dbt init` failed at 18:12:05.087817 after 0.14 seconds
+[0m18:12:05.087817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180DFA89990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180DFD607D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180DFD63BD0>]}
+[0m18:12:05.103458 [debug] [MainThread]: Flushing usage events
+[0m18:13:33.897397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237487C9750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002374881BD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237487CA110>]}
+
+
+============================== 18:13:33.907502 | c3fca1f5-4417-4b6d-9fb0-84603bde0d3e ==============================
+[0m18:13:33.907502 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:13:33.907502 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:13:33.913545 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:13:33.917160 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:13:33.923226 [debug] [MainThread]: Command `dbt init` failed at 18:13:33.923226 after 0.19 seconds
+[0m18:13:33.926267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237417B9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002374881D4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002374881E750>]}
+[0m18:13:33.926267 [debug] [MainThread]: Flushing usage events
+[0m18:13:44.052764 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:16:43.082826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D341EC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D3415F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D34150D0>]}
+
+
+============================== 18:16:43.090377 | dc62b82c-a15b-4134-a843-32983329e12a ==============================
+[0m18:16:43.090377 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:16:43.094410 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:16:43.098971 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:16:43.102529 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:16:43.110110 [debug] [MainThread]: Command `dbt init` failed at 18:16:43.106573 after 0.20 seconds
+[0m18:16:43.110110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207D3410150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207CC419990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207CC6F3BD0>]}
+[0m18:16:43.110110 [debug] [MainThread]: Flushing usage events
+[0m18:22:06.740558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D74DBCF790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D74DA02490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D74DBC5F90>]}
+
+
+============================== 18:22:06.758224 | 72109ef0-0b13-4664-8b6a-dc3cb0b96fb6 ==============================
+[0m18:22:06.758224 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:22:06.758224 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init Vehicle_Trajectory_Analysis', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:22:06.758224 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m18:22:06.758224 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 317, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 142, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m18:22:06.758224 [debug] [MainThread]: Command `dbt init` failed at 18:22:06.758224 after 0.14 seconds
+[0m18:22:06.774599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D74DBC40D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D746B699D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D74D80DA90>]}
+[0m18:22:06.774599 [debug] [MainThread]: Flushing usage events
+[0m18:29:16.958437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D575CBB050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D575998D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D575B02090>]}
+
+
+============================== 18:29:16.963951 | 859cf27e-2039-42f4-bcbd-14cc4815f06c ==============================
+[0m18:29:16.963951 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:29:16.963951 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init Dbt_workflows', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:29:16.979885 [debug] [MainThread]: Starter project path: C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m18:29:17.004578 [info ] [MainThread]: 
+Your new dbt project "Dbt_workflows" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:29:17.004578 [info ] [MainThread]: Setting up your profile.
+[0m18:30:17.124305 [info ] [MainThread]: Profile Dbt_workflows written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:30:17.130413 [debug] [MainThread]: Command `dbt init` succeeded at 18:30:17.130413 after 60.30 seconds
+[0m18:30:17.130413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D56EC99A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D56EF73990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D56ECDF550>]}
+[0m18:30:17.130413 [debug] [MainThread]: Flushing usage events
+[0m18:33:08.173656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CEDE5C710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CEDE56A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CEDE57650>]}
+
+
+============================== 18:33:08.179400 | dff82975-eac8-48ca-8122-6eef015ad64f ==============================
+[0m18:33:08.179400 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:33:08.188456 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:33:08.188456 [info ] [MainThread]: dbt version: 1.7.13
+[0m18:33:08.193990 [info ] [MainThread]: python version: 3.11.4
+[0m18:33:08.193990 [info ] [MainThread]: python path: C:\Users\HP\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:33:08.199043 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:33:08.482505 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m18:33:08.488054 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m18:33:08.492675 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\Desktop\10_Academy\Week_2\Data_Warehouse_with__SQL_DBT_AirFlow_Week2\dbt_project.yml
+[0m18:33:08.494720 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:33:08.494720 [debug] [MainThread]: Command `dbt debug` failed at 18:33:08.494720 after 0.51 seconds
+[0m18:33:08.504247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CE6E79990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CEDE50210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CEDFADC50>]}
+[0m18:33:08.504247 [debug] [MainThread]: Flushing usage events
+[0m18:35:02.640334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B39044050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B38C6DDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B39064510>]}
+
+
+============================== 18:35:02.651943 | ee7bacad-d80e-4fcd-8a47-c1423a968e8f ==============================
+[0m18:35:02.651943 [info ] [MainThread]: Running with dbt=1.7.13
+[0m18:35:02.651943 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:35:02.659478 [info ] [MainThread]: dbt version: 1.7.13
+[0m18:35:02.659478 [info ] [MainThread]: python version: 3.11.4
+[0m18:35:02.663998 [info ] [MainThread]: python path: C:\Users\HP\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:35:02.663998 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:35:02.877884 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m18:35:02.877884 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m18:35:02.893526 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\Desktop\10_Academy\Week_2\Data_Warehouse_with__SQL_DBT_AirFlow_Week2\dbt_project.yml
+[0m18:35:02.896539 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:35:02.896539 [debug] [MainThread]: Command `dbt debug` failed at 18:35:02.896539 after 0.39 seconds
+[0m18:35:02.896539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B32089990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B39127C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B3236C790>]}
+[0m18:35:02.896539 [debug] [MainThread]: Flushing usage events
